@@ -1,0 +1,15 @@
+{% extends 'Template/index.html' %}
+{% load static %}
+
+{% block content %}
+    <form action="index.html" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" name="submit" value="submit" />
+    </form>
+{% endblock %}
+
+
+
+
+<!--forms/book-a-table.php-->
